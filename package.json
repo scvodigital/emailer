@@ -9,7 +9,9 @@
     "build": "npm run clear-build && LIBRARY=Emailer webpack --env=prod",
     "publish": "npm run build && GOOGLE_APPLICATION_CREDENTIALS=\"secret.json\" SITE=emailer node publish.js",
     "clear-build": "rm -rf build/**",
-    "deploy": "./deploy.sh"
+    "deploy": "./deploy.sh",
+    "compile-email-templates": "node_modules/mjml/bin/mjml configuration/emails/*mjml -o configuration/partials/bodies/",
+    "watch-compile-email-templates": "node_modules/mjml/bin/mjml -w configuration/emails/*mjml -o configuration/partials/bodies/"
   },
   "repository": {
     "type": "git",

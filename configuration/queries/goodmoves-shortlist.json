@@ -1,0 +1,60 @@
+{
+  "size": 200,
+  "_source": [
+    "Id",
+    "slug",
+    "top_job",
+    "description",
+    "title",
+    "title_slug",
+    "geo_coords",
+    "home_based",
+    "location",
+    "salary",
+    "salary_currency",
+    "role_status_list",
+    "active",
+    "closing_date",
+    "start_at",
+    "end_at",
+    "organisation.id",
+    "organisation.slug",
+    "organisation.name_slug",
+    "organisation.name",
+    "organisation.has_logo",
+    "organisation.logo_url"
+  ],
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "term": {
+            "active": true
+          }
+        },
+        {
+          "range": {
+            "closing_date": {
+              "gt": "now+2d/d",
+              "lt": "now+4d/d"
+            }
+          }
+        },
+        {
+          "ids": {
+            "values": [
+              {{~#with (querystring (regexReplace templateMetaData.querystrings '/&&/' 'gi' '&'))~}}
+                {{#eachJoin id ", "}}{{{stringify this}}}{{/eachJoin}}
+              {{~/with~}}
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "sort": [
+    {
+      "start_at": "asc"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "domains": [
+    "emailer.local",
+    "emailer.scvo.net"
+  ],
+  "routes": [
+    "{:./routes/*.json}"
+  ],
+  "metaData": {
+    "assetsVersion": "{:../package.json@version}",
+    "assetsBase": "https://storage.googleapis.com/scvo-assets/test/emailer/",
+    "title": "SCVO Emailer",
+    "menus": {},
+    "campaignConfig": "{:./data/emailer-campaigns.json}",
+    "vsCampaignConfig": "{:./data/vs-emailer-campaigns.json}",
+    "elasticsearchUrl": "{$./data/elasticsearch-url.txt}",
+    "firebaseDefaultDomain": {
+      "name": "scvo",
+      "label": "SCVO",
+      "logoUrl": "",
+      "config": {
+        "apiKey": "AIzaSyDIUNnyGeZY3sO8gGIf-_2dgO49xKij5zI",
+        "authDomain": "scvo-net.firebaseapp.com",
+        "databaseURL": "https://scvo-net.firebaseio.com",
+        "projectId": "scvo-net",
+        "storageBucket": "scvo-net.appspot.com",
+        "messagingSenderId": "782194712584"
+      }
+    },
+    "handlebars": {
+      "partials": {
+        "{$./partials/**/*.*}": "includeRelativePath=false&regexExpression=(-)&regexOptions=gi&regexReplace=_"
+      },
+      "templates": {
+        "{$./templates/**/*.*}": ""
+      },
+      "layouts": {
+        "{$./layouts/**/*.*}": ""
+      },
+      "queries": {
+        "{$./queries/**/*.*}": ""
+      }
+    },
+    "commonTasks": "{:./data/common-tasks.json}"
+  }
+}

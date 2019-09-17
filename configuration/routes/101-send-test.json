@@ -1,0 +1,61 @@
+{
+  "name": "send-test",
+  "pattern": "/send-test/:campaign/:email",
+  "debug": true,
+  "tasks": [
+    {
+      "name": "notifications",
+      "taskModule": "mysql",
+      "config": {
+        "connectionName": "notifications",
+        "queryTemplates": {
+          "subscriptions": ">context.metaData.handlebars.queries.get-test"
+        }
+      },
+      "renderer": "handlebars"
+    },
+    {
+      "name": "generate_es_task",
+      "taskModule": "render",
+      "renderer": "handlebars",
+      "config": {
+        "output": "data",
+        "parseJson": true,
+        "template": ">context.metaData.handlebars.templates.process_dynamic-es-task"
+      }
+    },
+    "data.generate_es_task",
+    {
+      "name": "generate_mysql_task",
+      "taskModule": "render",
+      "renderer": "handlebars",
+      "config": {
+        "output": "data",
+        "parseJson": true,
+        "template": ">context.metaData.handlebars.templates.process_dynamic-mysql-task"
+      }
+    },
+    "data.generate_mysql_task",
+    {
+      "name": "send_emails",
+      "taskModule": "mailgun",
+      "renderer": "handlebars",
+      "config": {
+        "output": "data",
+        "parseJson": true,
+        "dontTruncateResponse": true,
+        "template": ">context.metaData.handlebars.templates.process_email-data"
+      }
+    },
+    {
+      "name": "destination",
+      "taskModule": "render",
+      "renderer": "handlebars",
+      "config": {
+        "output": "body",
+        "template": ">context.metaData.handlebars.templates.send-test",
+        "contentType": "text/html"
+      }
+    }
+  ]
+}

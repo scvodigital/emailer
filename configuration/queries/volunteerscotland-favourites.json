@@ -1,0 +1,76 @@
+{
+  "size": 200,
+  "_source": [
+    "Id",
+    "slug",
+    "milo_ref",
+    "available_from",
+    "themes",
+    "themes_slugs",
+    "date_created",
+    "description",
+    "description_html",
+    "end_date",
+    "expenses_paid",
+    "experience_required",
+    "frequency_commitment_details",
+    "geo_coords",
+    "geo",
+    "minimum_age",
+    "postcode",
+    "organisation_slug",
+    "organisation_name",
+    "organisation_aims_and_objectives",
+    "organisation_website",
+    "organisation_website_url",
+    "opportunity_contact_first_name",
+    "opportunity_contact_last_name",
+    "opportunity_contact_phone",
+    "opportunity_contact_email",
+    "opportunity_contact_via_tsi",
+    "publish_start_date",
+    "support_options",
+    "goodhq_organisation.image_url",
+    "title",
+    "title_slug",
+    "travel_expenses",
+    "work_location",
+    "activities",
+    "activities_slugs",
+    "availability",
+    "availability_slugs",
+    "taster_available",
+    "volunteersearch_age_group",
+    "volunteersearch_age_group_slugs",
+    "volunteersearch_support_option",
+    "volunteersearch_support_option_slugs"
+  ],
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "range": {
+            "end_date": {
+              "gt": "now+2d/d",
+              "lt": "now+4d/d"
+            }
+          }
+        },
+        {
+          "ids": {
+            "values": [
+              {{~#with (querystring (regexReplace templateMetaData.querystrings '/&&/' 'gi' '&'))~}}
+                {{#eachJoin id ", "}}{{{stringify this}}}{{/eachJoin}}
+              {{~/with~}}
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "sort": [
+    {
+      "date_created": "asc"
+    }
+  ]
+}

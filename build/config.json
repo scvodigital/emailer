@@ -468,7 +468,7 @@
     }
   ],
   "metaData": {
-    "assetsVersion": "0.0.2",
+    "assetsVersion": "0.0.5",
     "assetsBase": "https://storage.googleapis.com/scvo-assets/test/emailer/",
     "title": "SCVO Emailer",
     "menus": {},

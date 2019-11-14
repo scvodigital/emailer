@@ -10,8 +10,8 @@
       "apiVersion": "5.6"
     },
     "queryTemplates": [
-      {{#each (filter @root.data.notifications.subscriptions.[1] "campaign" "valueIn" (getKeys @root.context.metaData.campaignConfig))}}
-        {{#withExtend this config=(getProperty @root.context.metaData.campaignConfig campaign)}}
+      {{#each (filter @root.data.notifications.subscriptions.[1] "campaign" "valueIn" (getKeys @root.context.metaData.vsCampaignConfig))}}
+        {{#withExtend this config=(getProperty @root.context.metaData.vsCampaignConfig campaign)}}
           {
             "name": "{{{slugify (concat campaign ' ' email)}}}",
             "index": {{{stringify config.elasticsearchIndex}}},

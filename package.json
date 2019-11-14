@@ -1,6 +1,6 @@
 {
   "name": "@scvo/emailer",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Site configuration and assets for emailer.scvo.net",
   "main": "index.js",
   "scripts": {

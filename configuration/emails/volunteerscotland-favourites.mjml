@@ -82,7 +82,7 @@
             </p>
           </mj-text>
 
-          <mj-image src="https://www.volunteerscotland.net/media/333407/volunteer_scotland_hi-res_png.png" align="center" width="125px" padding="0px"></mj-image>
+          <mj-image src="https://storage.googleapis.com/scvo-cms/scvo-cms-content/images/logos/volunteer_scotland_search.png" align="center" width="125px" padding="0px"></mj-image>
         </mj-column>
       </mj-section>
     </mj-wrapper>

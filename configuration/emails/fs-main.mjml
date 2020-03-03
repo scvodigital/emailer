@@ -331,7 +331,7 @@
           <mj-text font-size="14px" color="#ffffff" font-family="sans-serif" padding="0px 0px 15px" line-height="18px">
             &#169; {{momentFormat (moment) "YYYY"}}. The Scottish Council for Voluntary Organisations (SCVO) is a Scottish Charitable Incorporated Organisation. Charity registered in Scotland SC003558. Registered office Mansfield Traquair Centre, 15 Mansfield Place, Edinburgh EH3 6BB.
           </mj-text>
-          <mj-image src="https://storage.googleapis.com/scvo-assets/emailer/scvo-logo.png" align="right" width="125px" padding="0px"></mj-image>
+          <mj-image src="https://storage.googleapis.com/scvo-assets/emailer/scvo-white.png" align="center" width="125px" padding="0px"></mj-image>
         </mj-column>
       </mj-section>
     </mj-wrapper>

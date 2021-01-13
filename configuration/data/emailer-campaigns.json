@@ -103,7 +103,7 @@
       "newsTitle": "Latest news",
       "newsText": "",
       "noNewsText": "",
-      "fundsTitle": "Latest funds",
+      "fundsTitle": "",
       "fundsText": "New and recently opened funds",
       "noFundsText": "No funds have opened since your previous alert"
     },

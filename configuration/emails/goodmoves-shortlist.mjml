@@ -7,6 +7,16 @@
         </mj-column>
       </mj-section>
 
+      <mj-section>
+        <mj-column padding="10px" background-color="#F9DA18">
+          <mj-text font-size="16px" font-weight="bold" padding="0px" color="#244B5A" font-family="Montserrat, Helvetica, Arial, sans-serif">
+            <p>
+              We want your views to help us improve. <a href="/questionnaire">Please complete our short survey and you could win an Apple iPad</a>.
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
       <mj-raw>{{#with searchData}}
         {{#if hits.hits.[0]}}</mj-raw>
           <mj-section>

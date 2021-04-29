@@ -61,7 +61,7 @@
               <mj-column padding="0px">
                 <mj-text font-size="20px" padding="0px 15px 10px 15px" font-family="sans-serif">
                   <img src="https://storage.googleapis.com/fundingscotland/important.png" height="16" width="16" alt="[important]" title="Important news" style="vertical-align: middle;">
-                  <a href="{{../campaignConfig.metaData.baseUrl}}/news/{{replace (regexReplace _source.slug ".+?(?=_)_news_" "gi" "") "_" "/"}}?utm_source=alert&utm_medium=email" color="{{../colours.primary}}" style="color:{{../colours.primary}};">
+                  <a href="{{../campaignConfig.metaData.baseUrl}}/news/{{replace (regexReplace _source.slug ".+?(?=_)_news_" "gi" "") "_" "/"}}?utm_source=fundingscotland&utm_medium=email&utm_campaign=alert" color="{{../colours.primary}}" style="color:{{../colours.primary}};">
                     {{{_source.og_title}}}
                   </a>
                 </mj-text>
@@ -70,7 +70,7 @@
                   {{{truncate (stripTags _source.description) 500}}}
                 </mj-text>
 
-                <mj-button font-size="14px" padding="5px 15px" font-family="sans-serif" font-weight="700" align="right" href="{{../campaignConfig.metaData.baseUrl}}/news/{{replace (regexReplace _source.slug '.+?(?=_)_news_' 'gi' '') '_' '/'}}?utm_source=alert&utm_medium=email" background-color="{{../colours.primary}}" color="{{../colours.primaryText}}">
+                <mj-button font-size="14px" padding="5px 15px" font-family="sans-serif" font-weight="700" align="right" href="{{../campaignConfig.metaData.baseUrl}}/news/{{replace (regexReplace _source.slug '.+?(?=_)_news_' 'gi' '') '_' '/'}}?utm_source=fundingscotland&utm_medium=email&utm_campaign=alert" background-color="{{../colours.primary}}" color="{{../colours.primaryText}}">
                   Read full post
                 </mj-button>
               </mj-column>
@@ -81,7 +81,7 @@
             <mj-section padding="0px 0px 30px 0px">
               <mj-column padding="0px">
                 <mj-text font-size="20px" padding="0px 15px 10px 15px" font-family="sans-serif">
-                  <a href="{{../campaignConfig.metaData.baseUrl}}/news/{{replace (regexReplace _source.slug ".+?(?=_)_news_" "gi" "") "_" "/"}}?utm_source=alert&utm_medium=email" color="{{../colours.primary}}" style="color:{{../colours.primary}};">
+                  <a href="{{../campaignConfig.metaData.baseUrl}}/news/{{replace (regexReplace _source.slug ".+?(?=_)_news_" "gi" "") "_" "/"}}?utm_source=fundingscotland&utm_medium=email&utm_campaign=alert" color="{{../colours.primary}}" style="color:{{../colours.primary}};">
                     {{{_source.og_title}}}
                   </a>
                 </mj-text>
@@ -90,7 +90,7 @@
                   {{{truncate (stripTags _source.description) 500}}}
                 </mj-text>
 
-                <mj-button font-size="14px" padding="5px 15px" font-family="sans-serif" font-weight="700" align="right" href="{{../campaignConfig.metaData.baseUrl}}/news/{{replace (regexReplace _source.slug '.+?(?=_)_news_' 'gi' '') '_' '/'}}?utm_source=alert&utm_medium=email" background-color="{{../colours.primary}}" color="{{../colours.primaryText}}">
+                <mj-button font-size="14px" padding="5px 15px" font-family="sans-serif" font-weight="700" align="right" href="{{../campaignConfig.metaData.baseUrl}}/news/{{replace (regexReplace _source.slug '.+?(?=_)_news_' 'gi' '') '_' '/'}}?utm_source=fundingscotland&utm_medium=email&utm_campaign=alert" background-color="{{../colours.primary}}" color="{{../colours.primaryText}}">
                   Read full post
                 </mj-button>
               </mj-column>
@@ -133,14 +133,14 @@
               <mj-section padding="0px 0px 30px 0px">
                 <mj-column padding="0px">
                   <mj-text font-size="20px" padding="0px 15px 10px 15px" font-family="sans-serif">
-                    <a href="{{../campaignConfig.metaData.baseUrl}}/fund/{{_source.Id}}/{{_source.slug}}?utm_source=alert&utm_medium=email" color="{{../colours.primary}}" style="color:{{../colours.primary}};">
+                    <a href="{{../campaignConfig.metaData.baseUrl}}/fund/{{_source.Id}}/{{_source.slug}}?utm_source=fundingscotland&utm_medium=email&utm_campaign=alert" color="{{../colours.primary}}" style="color:{{../colours.primary}};">
                       {{{_source.title}}}
                     </a>
                   </mj-text>
 
                   <mj-text font-size="14px" padding="5px 15px" font-family="sans-serif" line-height="18px">
                     <strong>Organisation:</strong>
-                    <a href="{{../campaignConfig.metaData.baseUrl}}/funder/{{_source.funder_organisation.id}}/{{_source.funder_organisation.slug}}?utm_source=alert&utm_medium=email" color="{{../colours.primary}}" style="color:{{../colours.primary}};">
+                    <a href="{{../campaignConfig.metaData.baseUrl}}/funder/{{_source.funder_organisation.id}}/{{_source.funder_organisation.slug}}?utm_source=fundingscotland&utm_medium=email&utm_campaign=alert" color="{{../colours.primary}}" style="color:{{../colours.primary}};">
                       {{{_source.funder_organisation.name}}}
                     </a>
                   </mj-text>
@@ -191,7 +191,7 @@
                     </mj-text>
                   <mj-raw>{{/if}}</mj-raw>
 
-                  <mj-button font-size="14px" padding="5px 15px" font-family="sans-serif" font-weight="700" align="right" href="{{../campaignConfig.metaData.baseUrl}}/fund/{{_source.Id}}/{{_source.slug}}?utm_source=alert&utm_medium=email" background-color="{{../colours.primary}}" color="{{../colours.primaryText}}">
+                  <mj-button font-size="14px" padding="5px 15px" font-family="sans-serif" font-weight="700" align="right" href="{{../campaignConfig.metaData.baseUrl}}/fund/{{_source.Id}}/{{_source.slug}}?utm_source=fundingscotland&utm_medium=email&utm_campaign=alert" background-color="{{../colours.primary}}" color="{{../colours.primaryText}}">
                     Find out more &gt;
                   </mj-button>
                 </mj-column>
@@ -213,14 +213,14 @@
                 <mj-section padding="0px 0px 30px 0px">
                   <mj-column padding="0px">
                     <mj-text font-size="20px" padding="0px 15px 10px 15px" font-family="sans-serif">
-                      <a href="{{../campaignConfig.metaData.baseUrl}}/fund/{{_source.Id}}/{{_source.slug}}?utm_source=alert&utm_medium=email" color="{{../colours.primary}}" style="color:{{../colours.primary}};">
+                      <a href="{{../campaignConfig.metaData.baseUrl}}/fund/{{_source.Id}}/{{_source.slug}}?utm_source=fundingscotland&utm_medium=email&utm_campaign=alert" color="{{../colours.primary}}" style="color:{{../colours.primary}};">
                         {{{_source.title}}}
                       </a>
                     </mj-text>
 
                     <mj-text font-size="14px" padding="5px 15px" font-family="sans-serif" line-height="18px">
                       <strong>Organisation:</strong>
-                      <a href="{{../campaignConfig.metaData.baseUrl}}/funder/{{_source.funder_organisation.id}}/{{_source.funder_organisation.slug}}?utm_source=alert&utm_medium=email" color="{{../colours.primary}}" style="color:{{../colours.primary}};">
+                      <a href="{{../campaignConfig.metaData.baseUrl}}/funder/{{_source.funder_organisation.id}}/{{_source.funder_organisation.slug}}?utm_source=fundingscotland&utm_medium=email&utm_campaign=alert" color="{{../colours.primary}}" style="color:{{../colours.primary}};">
                         {{{_source.funder_organisation.name}}}
                       </a>
                     </mj-text>
@@ -271,7 +271,7 @@
                       </mj-text>
                     <mj-raw>{{/if}}</mj-raw>
 
-                    <mj-button font-size="14px" padding="5px 15px" font-family="sans-serif" font-weight="700" align="right" href="{{../campaignConfig.metaData.baseUrl}}/fund/{{_source.Id}}/{{_source.slug}}?utm_source=alert&utm_medium=email" background-color="{{../colours.primary}}" color="{{../colours.primaryText}}">
+                    <mj-button font-size="14px" padding="5px 15px" font-family="sans-serif" font-weight="700" align="right" href="{{../campaignConfig.metaData.baseUrl}}/fund/{{_source.Id}}/{{_source.slug}}?utm_source=fundingscotland&utm_medium=email&utm_campaign=alert" background-color="{{../colours.primary}}" color="{{../colours.primaryText}}">
                       Find out more &gt;
                     </mj-button>
                   </mj-column>

@@ -6,6 +6,14 @@
           <mj-image src="https://storage.googleapis.com/scvo-assets/emailer/goodmoves-logo-white.png" width="352px" align="left" padding="0px"></mj-image>
         </mj-column>
       </mj-section>
+      {{!--
+      bg DFBDCB
+      <mj-section background-color="#B6497D" padding="0px">
+        <mj-column padding="0px">
+          <mj-image src="https://storage.googleapis.com/scvo-assets/emailer/goodmoves-alert-header.png" padding="0px" />
+        </mj-column>
+      </mj-section>
+      --}}
 
       <mj-raw>{{#with searchData}}
         {{#if hits.hits.[0]}}</mj-raw>

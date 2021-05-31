@@ -1,19 +1,11 @@
 <mjml>
-  <mj-body background-color="#F5F5F5">
+  <mj-body background-color="#DFBDCB">
     <mj-wrapper background-color="#ffffff" padding="10px">
-      <mj-section background-color="#42842A" padding="10px">
-        <mj-column padding="0px">
-          <mj-image src="https://storage.googleapis.com/scvo-assets/emailer/goodmoves-logo-white.png" width="352px" align="left" padding="0px"></mj-image>
-        </mj-column>
-      </mj-section>
-      {{!--
-      bg DFBDCB
       <mj-section background-color="#B6497D" padding="0px">
         <mj-column padding="0px">
           <mj-image src="https://storage.googleapis.com/scvo-assets/emailer/goodmoves-alert-header.png" padding="0px" />
         </mj-column>
       </mj-section>
-      --}}
 
       <mj-raw>{{#with searchData}}
         {{#if hits.hits.[0]}}</mj-raw>
@@ -32,11 +24,11 @@
             <mj-column padding="0px">
               <mj-text font-size="16px" padding="0px" color="#000000" font-family="Montserrat, Helvetica, Arial, sans-serif">
                 <h2 style="margin:10px 0 0;">
-                  <a href="https://goodmoves.com/vacancy/{{_source.Id}}/{{_source.title_slug}}?utm_source=goodmoves&utm_medium=email&utm_campaign=alert" color="#42842A" style="color:#42842A;font-weight:bold;">{{{_source.title}}}</a>
+                  <a href="https://goodmoves.com/vacancy/{{_source.Id}}/{{_source.title_slug}}?utm_source=goodmoves&utm_medium=email&utm_campaign=alert" color="#B6497D" style="color:#B6497D;font-weight:bold;">{{{_source.title}}}</a>
                 </h2>
                 <p>
                   <strong>Organisation:</strong>
-                  <a href="https://goodmoves.com/organisation/{{_source.organisation.id}}/{{_source.organisation.name_slug}}?utm_source=goodmoves&utm_medium=email&utm_campaign=alert" color="#42842A" style="color:#42842A;font-weight:bold;">{{{_source.organisation.name}}}</a><br />
+                  <a href="https://goodmoves.com/organisation/{{_source.organisation.id}}/{{_source.organisation.name_slug}}?utm_source=goodmoves&utm_medium=email&utm_campaign=alert" color="#B6497D" style="color:#B6497D;font-weight:bold;">{{{_source.organisation.name}}}</a><br />
                   <strong>Salary:</strong>
                   {{{_source.salary}}}<br />
                   <strong>Location:</strong>
@@ -44,7 +36,7 @@
                 </p>
                 <p>
                   {{{truncate (stripTags _source.description) 250}}}
-                  <a href="https://goodmoves.com/vacancy/{{_source.Id}}/{{_source.title_slug}}?utm_source=goodmoves&utm_medium=email&utm_campaign=alert" color="#42842A" style="color:#42842A;font-weight:bold;">Find out more</a>
+                  <a href="https://goodmoves.com/vacancy/{{_source.Id}}/{{_source.title_slug}}?utm_source=goodmoves&utm_medium=email&utm_campaign=alert" color="#B6497D" style="color:#B6497D;font-weight:bold;">Find out more</a>
                 </p>
               </mj-text>
             </mj-column>

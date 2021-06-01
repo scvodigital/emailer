@@ -1,5 +1,5 @@
 <mjml>
-  <mj-body background-color="#DFBDCB">
+  <mj-body background-color="#ffffff">
     <mj-wrapper background-color="#ffffff" padding="10px">
       <mj-section background-color="#B6497D" padding="0px">
         <mj-column padding="0px">
@@ -11,7 +11,7 @@
         {{#if hits.hits.[0]}}</mj-raw>
           <mj-section>
             <mj-column padding="0px">
-              <mj-text font-size="16px" padding="0px" color="#000000" font-family="Montserrat, Helvetica, Arial, sans-serif">
+              <mj-text font-size="16px" padding="0px" color="#244B5A" font-family="Montserrat, Helvetica, Arial, sans-serif">
                 <p>
                   <strong>{{inflect hits.total "job" "jobs" true}}</strong> in your shortlist will close on the {{momentFormat (dateMath "now+3d/d") "Do \o\f MMMM"}}.
                 </p>
@@ -22,7 +22,7 @@
           <mj-raw>{{#each hits.hits}}</mj-raw>
           <mj-section padding="5px 0px">
             <mj-column padding="0px">
-              <mj-text font-size="16px" padding="0px" color="#000000" font-family="Montserrat, Helvetica, Arial, sans-serif">
+              <mj-text font-size="16px" padding="0px" color="#244B5A" font-family="Montserrat, Helvetica, Arial, sans-serif">
                 <h2 style="margin:10px 0 0;">
                   <a href="https://goodmoves.com/vacancy/{{_source.Id}}/{{_source.title_slug}}?utm_source=goodmoves&utm_medium=email&utm_campaign=alert" color="#B6497D" style="color:#B6497D;font-weight:bold;">{{{_source.title}}}</a>
                 </h2>
@@ -45,7 +45,7 @@
         {{else}}</mj-raw>
           <mj-section>
             <mj-column padding="0px">
-              <mj-text font-size="16px" padding="0px" color="#000000" font-family="Montserrat, helvetica, Arial, sans-serif">
+              <mj-text font-size="16px" padding="0px" color="#244B5A" font-family="Montserrat, helvetica, Arial, sans-serif">
                 <p>There is nothing in your Goodmoves job alert today</p>
               </mj-text>
             </mj-column>
@@ -54,7 +54,7 @@
       {{else}}</mj-raw>
         <mj-section>
           <mj-column padding="0px">
-            <mj-text font-size="16px" padding="0px" color="#000000" font-family="Montserrat, helvetica, Arial, sans-serif">
+            <mj-text font-size="16px" padding="0px" color="#244B5A" font-family="Montserrat, helvetica, Arial, sans-serif">
               <p>There is nothing in your Goodmoves job alert today</p>
             </mj-text>
           </mj-column>

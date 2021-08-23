@@ -13,6 +13,7 @@
       "funder_organisation.slug",
       "fund_status",
       "categories_slug",
+      "post_tags_slug",
       "news",
       "date_created",
       "date_last_modified",
@@ -29,7 +30,8 @@
           {{#json}}
             {{#json key="bool"}}
               {{#json key="filter" type="array"}}
-                {{>queries_terms field="_type" terms=(split (concat "fs-post-" siteConfig.name ",fs-post-default") ",")}},
+                {{>queries_term field="_type" term="fs-post-default"}},
+                {{>queries_terms field="post_tags_slug" terms=(split (concat siteConfig.name ",global") ",")}},
                 {{#ifAny @root.request.params.query.lastsent templateMetaData.lastSent}}
                   {{>queries_date_range field="date_publish_on" gte=(momentFormat (moment (default @root.request.params.query.lastsent templateMetaData.lastSent) "") "x")}}
                 {{else}}

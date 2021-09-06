@@ -363,7 +363,7 @@
     "elasticsearchType": "fs-fund,fs-post-default",
     "metaData": {
       "title": "Funding updates and news",
-      "baseUrl": "https://aberdeenshire.fundingscotland.com",
+      "baseUrl": "https://www.avashire.org.uk/searchforfunding.html#",
       "siteConfiguration": "{:./fs-configurations.json@aberdeenshire}",
       "newsTitle": "Latest news",
       "newsText": "",

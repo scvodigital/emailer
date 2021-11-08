@@ -7,6 +7,16 @@
         </mj-column>
       </mj-section>
 
+      <mj-section>
+        <mj-column padding="0px">
+          <mj-text padding="0px">
+            <a href="https://findajob.dwp.gov.uk/search?q=SCVO&amp;w=Scotland%2C+UK">
+              <img src="https://storage.googleapis.com/scvo-wordpress/2021/11/goodmoves-kickstart-scheme-email-banner.png" width="580" padding="0" />
+            </a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
       <mj-raw>{{#with searchData}}
         {{#if hits.hits.[0]}}</mj-raw>
           <mj-section>

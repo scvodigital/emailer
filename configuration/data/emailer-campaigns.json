@@ -163,7 +163,7 @@
     "elasticsearchType": "fs-fund,fs-post-default",
     "metaData": {
       "title": "Funding updates and news",
-      "baseUrl": "https://fifefundingsearch.com",
+      "baseUrl": "https://www.fife.gov.uk/kb/docs/articles/council-and-democracy/community-group-support-and-funding/scvo#",
       "siteConfiguration": "{:./fs-configurations.json@fife}",
       "newsTitle": "Latest news",
       "newsText": "",

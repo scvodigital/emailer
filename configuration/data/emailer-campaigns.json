@@ -141,7 +141,7 @@
     "elasticsearchType": "fs-fund,fs-post-default",
     "metaData": {
       "title": "Funding updates and news",
-      "baseUrl": "https://eastrenfrewshire.fundingscotland.com",
+      "baseUrl": "https://www.eastrenfrewshire.gov.uk/fs#",
       "siteConfiguration": "{:./fs-configurations.json@eastrenfrewshire}",
       "newsTitle": "Latest news",
       "newsText": "",
@@ -207,7 +207,7 @@
     "elasticsearchType": "fs-fund,fs-post-default",
     "metaData": {
       "title": "Funding updates and news",
-      "baseUrl": "https://shetland.fundingscotland.com",
+      "baseUrl": "https://www.shetland.gov.uk/fundingshetland#",
       "siteConfiguration": "{:./fs-configurations.json@shetland}",
       "newsTitle": "Latest news",
       "newsText": "",
@@ -230,7 +230,7 @@
     "importantType": "fs-fund",
     "metaData": {
       "title": "Saved search alert",
-      "baseUrl": "https://southlanarkshire.fundingscotland.com",
+      "baseUrl": "https://www.southlanarkshire.gov.uk/find-funding#",
       "siteConfiguration": "{:./fs-configurations.json@southlanarkshire}",
       "newsTitle": "Latest news",
       "newsText": "",
@@ -297,7 +297,7 @@
     "elasticsearchType": "fs-fund,fs-post-default",
     "metaData": {
       "title": "Funding updates and news",
-      "baseUrl": "https://srn.fundingscotland.com",
+      "baseUrl": "https://www.ruralnetwork.scot/funding/srn-funding-search#",
       "siteConfiguration": "{:./fs-configurations.json@srn}",
       "newsTitle": "Latest news",
       "newsText": "",
@@ -319,7 +319,7 @@
     "elasticsearchType": "fs-fund,fs-post-default",
     "metaData": {
       "title": "Funding updates and news",
-      "baseUrl": "https://stirling.fundingscotland.com",
+      "baseUrl": "https://www.stirling.gov.uk/community-life-and-leisure/community-funding-development-and-support/support-for-communities/funding-stirling/#",
       "siteConfiguration": "{:./fs-configurations.json@stirling}",
       "newsTitle": "Latest news",
       "newsText": "",
@@ -341,7 +341,7 @@
     "elasticsearchType": "fs-fund,fs-post-default",
     "metaData": {
       "title": "Funding updates and news",
-      "baseUrl": "https://perth-kinross.fundingscotland.com",
+      "baseUrl": "https://www.pkleader.org/perth-kinross-funding/#",
       "siteConfiguration": "{:./fs-configurations.json@perthkinross}",
       "newsTitle": "Latest news",
       "newsText": "",

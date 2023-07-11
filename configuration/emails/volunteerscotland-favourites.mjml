@@ -1,5 +1,5 @@
 <mjml>
-  <mj-body background-color="#F5F5F5">
+  <mj-body background-color="#f2f2f3">
     <mj-wrapper background-color="#ffffff" padding="10px">
       <mj-section background-color="#ffffff" padding="10px">
         <mj-column padding="0px">
@@ -13,7 +13,7 @@
             <mj-column padding="0px">
               <mj-text font-size="16px" padding="0px" line-height="20px" color="#000000" font-family="Montserrat, Helvetica, Arial, sans-serif">
                 <p>
-                  <strong>{{inflect hits.total "opportunity" "opportunities" true}}</strong> in your <a href="https://search.volunteerscotland.net/favourites">favourites</a> list will close soon.
+                  <strong>{{inflect hits.total "opportunity" "opportunities" true}}</strong> in your <a href="https://volunteer.scot/account/favourites">favourites</a> list will close soon.
                 </p>
               </mj-text>
             </mj-column>
@@ -23,7 +23,7 @@
       <mj-section padding="0px">
         <mj-column padding="0px">
           <mj-text font-size="16px" line-height="20px" padding="0px" color="#000000" font-family="Montserrat, Helvetica, Arial, sans-serif">
-            <p> <a href="https://search.volunteerscotland.net/opportunity/{{_source.Id}}/{{_source.title_slug}}?utm_source=volunteerscotlandsearch&utm_medium=email&utm_campaign=alert" color="#42842A" style="color:#42842A;font-weight:bold;">{{{_source.title}}}</a>
+            <p> <a href="https://volunteer.scot/search/{{_source.Id}}/{{_source.title_slug}}?utm_source=volunteerscotland&utm_medium=email&utm_campaign=alert" color="#42842A" style="color:#42842A;font-weight:bold;">{{{_source.title}}}</a>
               with {{{_source.organisation_name}}} will close on {{momentFormat (moment _source.end_date "") "Do \o\f MMMM"}}</p>
           </mj-text>
         </mj-column>
@@ -59,7 +59,7 @@
         </mj-column>
       </mj-section>
 
-      <mj-section background-color="#D7D3CC" padding="0px">
+      <mj-section background-color="#7c4199" padding="0px">
         <mj-column padding="10px">
           <mj-text font-size="16px" color="#ffffff" font-family="Montserrat, helvetica, Arial, sans-serif" padding="0px">
             <p style="margin:0px;">
@@ -69,7 +69,7 @@
         </mj-column>
       </mj-section>
 
-      <mj-section background-color="#D7D3CC" padding="0px">
+      <mj-section background-color="#7c4199" padding="0px">
         <mj-column padding="10px">
           <mj-text font-size="14px" color="#ffffff" font-family="Montserrat, helvetica, Arial, sans-serif" padding="0px 0px 15px">
             <p style="margin:0px;">

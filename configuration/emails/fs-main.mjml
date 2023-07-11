@@ -164,7 +164,11 @@
 
                 <mj-text font-size="14px" padding="5px 15px" font-family="sans-serif" line-height="18px">
                   <strong>Summary:</strong>
-                  {{{removeEntities (stripTags _source.description)}}}
+                  {{#if _source.search_fund_summary}}
+                    {{{removeEntities (stripTags _source.search_fund_summary)}}}
+                  {{else}}
+                    {{{removeEntities (truncate (stripTags _source.description) 250)}}}
+                  {{/if}}
                 </mj-text>
 
                 <mj-raw>{{#if _source.date_last_important_activity}}</mj-raw>

@@ -6,7 +6,7 @@
       {{#ifAll location lat lng distance ~}}
       {
         "geo_distance": {
-          "distance": "{{default distance "10"}}mi",
+          "distance": "{{default distance "10"}}",
           "geo_coords": {
             "lat": {{lat}},
             "lon": {{lng}}
